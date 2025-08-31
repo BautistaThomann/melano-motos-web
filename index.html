@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo-melano-motos-favicon.png">
+    <!-- importo bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- importo tipografia titulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- importo tipografia texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- importo font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- importo AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>MELANO MOTOS</title>
+</head>
+
+<body>
+    <header>
+        <!-- barra de navegacion -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="./img/logo-melanomotos.png"
+                        alt="logo Melano Motos"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#financiacion">Financiación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beneficios">Beneficios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ubicacion">Ubicación</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- carrusel -->
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://api.whatsapp.com/send?phone=543537511662&text=Hola%20Melano%20Motos!%20..." target="_blank"><img src="./img/banner1.jpg" class="d-block w-100" alt="banner 1"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://api.whatsapp.com/send?phone=543537511662&text=Hola%20Melano%20Motos!%20..." target="_blank"><img src="./img/banner2.jpg" class="d-block w-100" alt="banner 2"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://api.whatsapp.com/send?phone=543537511662&text=Hola%20Melano%20Motos!%20..." target="_blank"><img src="./img/banner3.jpg" class="d-block w-100" alt="banner 3"></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- quienes somos -->
+        <section>
+            <div class="contenedor-quienes-somos">
+                <h1 data-aos="fade-right" data-aos-duration="550">¿Quienes somos?</h1>
+                <div class="contenedor-parrafo" data-aos="fade-right" data-aos-duration="700">
+                    <p>En Melano Motos somos una agencia familiar comprometida con ofrecerte la mejor experiencia a la
+                        hora de elegir tu motocicleta o bicicleta. Ubicados en Idiazábal, en el sudeste cordobés,
+                        contamos con una amplia variedad de motos y bicicletas, adaptadas a todos los estilos y
+                        presupuestos.
+                        Nos enorgullece brindar un servicio cercano, personalizado y transparente, asegurando que cada
+                        cliente encuentre exactamente lo que busca. Visítanos y descubrí por qué en Melano Motos la
+                        pasión por dos ruedas se vive en familia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- porque elegir melano motos -->
+        <section id="servicios">
+            <div class="contenedor-titulo-cards">
+                <h2>¿Por qué elegir Melano Motos?</h2>
+                <div class="subcontenedor-cards">
+                    <div class="card-info" data-aos="fade-up" data-aos-duration="550">
+                        <img src="./img/asesoramiento-icono.png" alt="icono asesoramiento">
+                        <h3>Asesoramiento</h3>
+                        <p>Guía personalizada en tu elección con un equipo que entiende tus necesidades.</p>
+                    </div>
+                    <div class="card-info" data-aos="fade-up" data-aos-duration="650">
+                        <img src="./img/apreton-de-manos-icono.png" alt="icono de apreton de manos">
+                        <h3>Confianza</h3>
+                        <p>Más de 17 años de experiencia brindando respaldo y garantía en cada compra.</p>
+                    </div>
+                    <div class="card-info" data-aos="fade-up" data-aos-duration="750">
+                        <img src="./img/cheque-icono.png" alt="icono tilde">
+                        <h3>Variedad</h3>
+                        <p>Modelos de motos y bicis pensados para todos los gustos.</p>
+                    </div>
+                    <div class="card-info" data-aos="fade-up" data-aos-duration="850">
+                        <img src="./img/contrato-icono.png" alt="icono de contrato">
+                        <h3>Gestoria</h3>
+                        <p>En cada venta gestoria inicial sin cargo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- banner te ofrecemos -->
+        <section class="banner-ofrecemos">
+            <img src="./img/banner4.png" class="img-fluid" alt="banner 4">
+        </section>
+
+        <!-- tarjetas -->
+        <section class="seccion-tarjetas" id="financiacion">
+            <h2>Todas las tarjetas, todas las opciones</h2>
+            <h3>Aceptamos todas las tarjetas de crédito y débito</h3>
+            <div class="contenedor-tarjetas-pago">
+                <img src="./img/tarjeta-mp.png" alt="tarjeta Mercado Pago" data-aos="fade-left" data-aos-duration="1500">
+                <img src="./img/tarjeta-naranja.png" alt="tarjeta Naranja X" data-aos="fade-left" data-aos-duration="1700">
+                <img src="./img/tarjeta-bancon.png" alt="tarjeta Bancon" data-aos="fade-left" data-aos-duration="1900">
+                <img src="./img/tarjeta-nativa.png" alt="tarjeta Nativa" data-aos="fade-left" data-aos-duration="2100">
+                <img src="./img/tarjeta-mastercard.png" alt="tarjeta MasterCard" data-aos="fade-left" data-aos-duration="2300">
+                <img src="./img/tarjeta-visa.png" alt="tarjeta Visa" data-aos="fade-left" data-aos-duration="2500">
+            </div>
+            <div class="contenedor-link-wsp">
+                <a href="https://api.whatsapp.com/send?phone=543537511662&text=Hola%20Melano%20Motos!%20Era%20para%20consultar%20por%20la%20tarjeta%20(nombre%20de%20la%20tarjeta)%20..." target="_blank">Consultar tarjeta</a>
+            </div>
+        </section>
+
+        <!-- chatita envios -->
+        <section class="contenedor-chatita">
+            <div class="subcontenedor-chatita">
+                <div class="contenedor-titulo-domicilio">
+                    <h2>Compra tu moto y la recibís en tu domicilio</h2>
+                </div>
+                <div class="subcont-chatita-img">
+                    <img id="chatita" src="./img/chatita.png" alt="kangoo con logo de la agencia">
+                </div>
+                <div class="contenedor-link-wsp">
+                    <a href="https://api.whatsapp.com/send?phone=543537511662&text=Hola%20Melano%20Motos!%20Hacen%20env%C3%ADos%20a%20(nombre%20del%20domicilio%20-%20localidad)%20..." target="_blank">Consultar por domicilio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- beneficios casco + aceite -->
+        <section class="banner-ofrecemos" id="beneficios">
+            <img src="./img/banner5.png" class="img-fluid" alt="banner beneficios + aceite">
+        </section>
+
+        <!-- marcas de motos y bicis -->
+        <section class="seccion-marcas">
+            <h2>Trabajamos con las marcas más elegidas</h2>
+            <h3>Los modelos que mejor se adaptan a tu día a día</h3>
+            <div class="contenedor-marcas-slider">
+                <div class="contenedor-img-marcas">
+                    <!-- primera tanda -->
+                    <img src="./img/corven.png" alt="marca corven motos">
+                    <img src="./img/honda.png" alt="marca honda motos">
+                    <img src="./img/topmega.png" alt="marca topmega bicis">
+                    <img src="./img/keller.png" alt="marca keller motos">
+                    <img src="./img/venzo.png" alt="marca venzo bicis">
+                    <img src="./img/benelli.png" alt="marca benelli motos">
+                    <img src="./img/cfmoto.png" alt="marca cfmoto motos">
+                    <img src="./img/enrique.png" alt="marca enrique bicis">
+                    <img src="./img/slp.png" alt="marca slp bicis">
+                    <img src="./img/gribom.png" alt="marca gribom bicis">
+                    <img src="./img/mondial.png" alt="marca mondial motos">
+                    <img src="./img/siam.png" alt="marca siam motos">
+                    <img src="./img/tomaselli.png" alt="marca tomaselli bicis">
+                    <img src="./img/voge.png" alt="marca voge motos">
+
+                    <!-- segunda tanda -->
+                    <img src="./img/corven.png" alt="marca corven motos">
+                    <img src="./img/honda.png" alt="marca honda motos">
+                    <img src="./img/topmega.png" alt="marca topmega bicis">
+                    <img src="./img/keller.png" alt="marca keller motos">
+                    <img src="./img/venzo.png" alt="marca venzo bicis">
+                    <img src="./img/benelli.png" alt="marca benelli motos">
+                    <img src="./img/cfmoto.png" alt="marca cfmoto motos">
+                    <img src="./img/enrique.png" alt="marca enrique bicis">
+                    <img src="./img/slp.png" alt="marca slp bicis">
+                    <img src="./img/gribom.png" alt="marca gribom bicis">
+                    <img src="./img/mondial.png" alt="marca mondial motos">
+                    <img src="./img/siam.png" alt="marca siam motos">
+                    <img src="./img/tomaselli.png" alt="marca tomaselli bicis">
+                    <img src="./img/voge.png" alt="marca voge motos">
+                </div>
+            </div>
+            <div class="contenedor-link-wsp">
+                <a href="https://api.whatsapp.com/send?phone=543537511662&text=Hola%20Melano%20Motos!%20Te%20consulto%20por%20la%20marca%20(nombre%20de%20la%20marca)%20..." target="_blank">Consultar marca</a>
+            </div>
+        </section>
+
+        <!-- ubicacion -->
+        <section class="seccion-ubicacion" id="ubicacion">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6706.40034999293!2d-63.03202077247204!3d-32.81346071668162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc1d0030e9eae1%3A0x2f236b9a994d3473!2sMelano%20motos!5e0!3m2!1ses!2sar!4v1756490797982!5m2!1ses!2sar"
+                width="100%" height="485" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="detalle-ubicacion">
+                <h3>Melano Motos - Idiazábal</h3>
+                <p><span><img src="./img/icono-ubicacion.png" alt="icono ubicacion"></span>Domingo Doratto 421, Idiazábal, Córdoba.</p>
+                <p><span><img src="./img/icono-telefono.png" alt="icono telefono"></span>+54 9 353-751-1662</p>
+                <p><span><img src="./img/icono-hora.png" alt="icono hora"></span> Lunes a Sábados de 8:30 a 12:30 y de 16:30 a 20:30.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="sub-detalle-izquierda">
+                <img src="./img/logo-melanomotos.png" alt="logo Melano Motos">
+                <p class="primer-parrafo">Domingo Doratto 421, Idiazábal, Córdoba</p>
+                <p>+54 9 353-751-1662</p>
+                <p class="ultimo-parrafo">m_melano@hotmail.com</p>
+            </div>
+            <div class="sub-detalle-derecha">
+                <p class="p-contenedor-redes">
+                    <span><a href="https://www.instagram.com/melanomotos/" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
+                    <span><a href="https://api.whatsapp.com/send?phone=543537511662&text=Hola%20Melano%20Motos!%20..." target="_blank"><i class="fa-brands fa-whatsapp"></i></a></span>
+                    <span><a href="https://maps.app.goo.gl/eEHvP6SKkAxMQmuD8" target="_blank"><i class="fa-solid fa-location-dot"></i></a></span>
+                </p>
+            </div>
+        </div>
+        <p class="disenio-desarrollo" target="_blank">| Diseñado y Desarrollado por <span><a href="https://api.whatsapp.com/send?phone=543534799038&text=Hola%20Bautista!%20Te%20consulto%20por%20el%20tema%20web%20..." target="_blank">Bautista Thomann</a></span></p>
+    </footer>
+
+    <!-- importo script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- linkeo js -->
+    <script src="script.js"></script>
+
+    <!-- importo script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
