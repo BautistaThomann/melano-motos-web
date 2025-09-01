@@ -5,7 +5,7 @@ window.addEventListener("scroll", () => {
     const rect = chatita.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
-    if (rect.top < windowHeight * 0.72 && rect.bottom > windowHeight * 0.32) {
+    if (rect.top < windowHeight * 0.90 && rect.bottom > windowHeight * 0.45) {
         chatita.style.transform = "translateX(0)";
         chatita.style.opacity = "1";
     } else {
