@@ -5,7 +5,13 @@ window.addEventListener("scroll", () => {
     const rect = chatita.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
-    if (rect.top < windowHeight * 0.90 && rect.bottom > windowHeight * 0.45) {
+    // Detectar si es móvil en vertical
+    const isMobileVertical = window.innerWidth <= 600 && window.innerHeight > window.innerWidth;
+
+    if (
+        (rect.top < windowHeight * (isMobileVertical ? 0.98 : 0.90)) &&
+        (rect.bottom > windowHeight * (isMobileVertical ? 0.30 : 0.45))
+    ) {
         chatita.style.transform = "translateX(0)";
         chatita.style.opacity = "1";
     } else {
