@@ -5,12 +5,27 @@ window.addEventListener("scroll", () => {
     const rect = chatita.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
-    // Detectar si es móvil en vertical
-    const isMobileVertical = window.innerWidth <= 600 && window.innerHeight > window.innerWidth;
+    // Detectar dispositivo
+    const isMobile = window.innerWidth <= 768; // Celular hasta 768px
+    const isNotebook = window.innerWidth > 768; // Notebook
+
+    // Definir umbrales distintos según dispositivo
+    let topThreshold;
+    let bottomThreshold;
+
+    if (isMobile) {
+        // 📱 Celular
+        topThreshold = 0.95;   // aparece antes
+        bottomThreshold = 0.25;
+    } else if (isNotebook) {
+        // 💻 Notebook
+        topThreshold = 0.85;   // un poco más tarde
+        bottomThreshold = 0.45;
+    }
 
     if (
-        (rect.top < windowHeight * (isMobileVertical ? 0.98 : 0.90)) &&
-        (rect.bottom > windowHeight * (isMobileVertical ? 0.30 : 0.45))
+        rect.top < windowHeight * topThreshold &&
+        rect.bottom > windowHeight * bottomThreshold
     ) {
         chatita.style.transform = "translateX(0)";
         chatita.style.opacity = "1";
@@ -19,6 +34,8 @@ window.addEventListener("scroll", () => {
         chatita.style.opacity = "0";
     }
 });
+
+
 
 // animacion marcas
 const contenedor = document.querySelector('.contenedor-img-marcas');
