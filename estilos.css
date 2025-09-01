@@ -377,6 +377,11 @@ footer {
 
 /* VISTA CELULAR (450px) */
 @media (max-width: 450px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
     /* barra de navegacion */
     .logo {
         margin: 0;
@@ -428,19 +433,19 @@ footer {
     }
 
     /* quienes somos */
-    .contenedor-quienes-somos{
+    .contenedor-quienes-somos {
         margin-top: 3rem;
     }
 
-    .contenedor-quienes-somos h1{
+    .contenedor-quienes-somos h1 {
         font-size: 1.5rem;
     }
 
-    .contenedor-parrafo{
+    .contenedor-parrafo {
         width: 18.6rem;
     }
 
-    .contenedor-parrafo p{
+    .contenedor-parrafo p {
         font-size: 0.8rem;
         text-align: center;
     }
@@ -456,28 +461,28 @@ footer {
         margin: 0;
     }
 
-    .subcontenedor-cards{
+    .subcontenedor-cards {
         margin-top: 1rem;
         padding-bottom: 1.7rem;
     }
 
-    .subcontenedor-cards .card-info{
+    .subcontenedor-cards .card-info {
         width: 18rem;
         padding: 3rem;
         margin: 0.7rem 0;
     }
 
-    .subcontenedor-cards .card-info img{
+    .subcontenedor-cards .card-info img {
         width: 3.4rem;
     }
 
-    .subcontenedor-cards .card-info h3{
+    .subcontenedor-cards .card-info h3 {
         font-size: 1.2rem;
         text-align: center;
         margin: 1rem 0;
     }
 
-    .subcontenedor-cards .card-info p{
+    .subcontenedor-cards .card-info p {
         margin: 0;
         font-size: 0.8rem;
     }
@@ -488,74 +493,82 @@ footer {
     }
 
     /* tarjetas */
-    .seccion-tarjetas{
+    .seccion-tarjetas {
         margin-top: 3rem;
         padding: 1.7rem 0;
     }
 
-    .seccion-tarjetas h2{
+    .seccion-tarjetas h2 {
         font-size: 1.3rem;
     }
 
-    .seccion-tarjetas h3{
+    .seccion-tarjetas h3 {
         font-size: 0.9rem;
         margin: 0;
         padding-top: 3px;
     }
 
-    .contenedor-tarjetas-pago{
+    .contenedor-tarjetas-pago {
         gap: 0rem;
+        width: 100%;
     }
 
-    .contenedor-tarjetas-pago img{
+    .contenedor-tarjetas-pago img {
         width: 7rem;
         padding: 4px 10px;
     }
 
     /* link de consulta */
-    .contenedor-link-wsp{
+    .contenedor-link-wsp {
         margin-top: 20px;
     }
 
-    .contenedor-link-wsp a{
+    .contenedor-link-wsp a {
         font-size: 0.5rem;
         padding: 0.4rem;
     }
 
     /* chatita */
-    .contenedor-chatita{
+    .contenedor-chatita {
         margin-top: 3rem;
     }
 
-    .contenedor-titulo-domicilio h2{
+    .contenedor-titulo-domicilio h2 {
         font-size: 1.3rem;
         text-align: center;
     }
 
-    .subcont-chatita-img #chatita{
-        width: 20rem;
+    .subcont-chatita-img #chatita {
+        width: 100%;
+        max-width: 390px;
+        transform: translateX(-120%);
+        opacity: 0;
+        transition: transform 1.5s ease, opacity 1.7s ease;
     }
 
     /* marcas */
-    .seccion-marcas{
+    .seccion-marcas {
         margin: 3rem 0;
     }
 
-    .seccion-marcas h2{
+    .seccion-marcas h2 {
         font-size: 1.3rem;
     }
 
-    .seccion-marcas h3{
+    .seccion-marcas h3 {
         font-size: 0.8rem;
         margin-bottom: 0;
         padding-bottom: 0;
     }
 
-    .contenedor-marcas-slider{
+    .contenedor-marcas-slider {
         width: 100%;
+        max-width: 70rem;
+        overflow: hidden;
+        margin: 0 auto;
     }
 
-    .contenedor-img-marcas{
+    .contenedor-img-marcas {
         padding: 0;
     }
 
@@ -563,16 +576,16 @@ footer {
         width: 7rem !important;
     }
 
-    .seccion-marcas .contenedor-link-wsp{
+    .seccion-marcas .contenedor-link-wsp {
         margin-top: 15px;
     }
 
     /* ubicacion iframe mapa */
-    iframe{
+    iframe {
         height: 600px;
     }
 
-    .detalle-ubicacion{
+    .detalle-ubicacion {
         padding: 21px;
         position: absolute;
         left: 50%;
@@ -586,20 +599,20 @@ footer {
         max-width: 245px;
     }
 
-    .detalle-ubicacion h3{
+    .detalle-ubicacion h3 {
         font-size: 1rem;
     }
 
-    .detalle-ubicacion img{
+    .detalle-ubicacion img {
         width: 15px;
         height: 15px;
     }
 
-    .detalle-ubicacion p{
+    .detalle-ubicacion p {
         font-size: 0.7rem;
     }
 
-    .detalle-ubicacion .ultimo-ubi-detalle{
+    .detalle-ubicacion .ultimo-ubi-detalle {
         font-size: 0.7rem;
         margin-bottom: 0;
     }
@@ -611,28 +624,29 @@ footer {
         text-align: center;
     }
 
-    .contenedor-footer .sub-detalle-izquierda{
+    .contenedor-footer .sub-detalle-izquierda {
         margin-right: 0;
     }
 
-    .contenedor-footer .sub-detalle-izquierda img{
+    .contenedor-footer .sub-detalle-izquierda img {
         width: 8rem;
     }
 
-    .contenedor-footer .sub-detalle-izquierda p{
+    .contenedor-footer .sub-detalle-izquierda p {
         font-size: 0.7rem;
     }
 
-    .p-contenedor-redes{
+    .p-contenedor-redes {
         margin-top: 25px;
     }
 
-    .contenedor-footer .sub-detalle-derecha a{
+    .contenedor-footer .sub-detalle-derecha a {
         font-size: 1rem;
         padding: 4px;
     }
 
-    .disenio-desarrollo{
+    .disenio-desarrollo {
+        font-size: 10px;
         margin: 3rem 0 0 0;
         text-align: center;
     }
