@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --tipografia-texto: "Inter", sans-serif;
     --tipografia-titulos: "Exo 2", sans-serif;
     --color-header-footer: #2A2A2A;
@@ -12,25 +12,25 @@
     --bs-emphasis-color-rgb: 255, 255, 255;
 }
 
-body{
+body {
     font-family: var(--tipografia-texto);
 }
 
 /* estilos header / barra de navegacion */
-header{
+header {
     background-color: var(--color-header-footer);
 }
 
-.navbar{
+.navbar {
     padding: 1.3rem;
 }
 
-.logo{
+.logo {
     width: 13rem;
     margin-left: 7rem;
 }
 
-.collapse{
+.collapse {
     margin-right: 7rem;
 }
 
@@ -54,12 +54,12 @@ header{
 }
 
 /* estilos carrusel */
-.carousel-inner{
+.carousel-inner {
     height: 42rem;
 }
 
 /* estilos quienes somos  */
-.contenedor-quienes-somos{
+.contenedor-quienes-somos {
     margin-top: 6rem;
 }
 
@@ -69,12 +69,12 @@ header{
     margin-bottom: 0;
 }
 
-.contenedor-parrafo{
+.contenedor-parrafo {
     width: 72rem;
     margin: 0 auto;
 }
 
-h1{
+h1 {
     font-family: var(--tipografia-titulos);
     font-weight: 600;
     text-align: center;
@@ -82,12 +82,12 @@ h1{
 }
 
 /* estilos porque elegir melano motos */
-.contenedor-titulo-cards{
+.contenedor-titulo-cards {
     margin-top: 6rem;
     background-color: #f5f5f5;
 }
 
-.contenedor-titulo-cards h2{
+.contenedor-titulo-cards h2 {
     padding-top: 3.5rem;
     text-align: center;
     font-family: var(--tipografia-titulos);
@@ -95,7 +95,7 @@ h1{
     font-size: 2.4rem;
 }
 
-.subcontenedor-cards{
+.subcontenedor-cards {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -103,7 +103,7 @@ h1{
     padding-bottom: 3.5rem;
 }
 
-.card-info{
+.card-info {
     width: 16rem;
     text-align: center;
     background-color: var(--color-cards);
@@ -111,67 +111,67 @@ h1{
     padding: 3rem;
 }
 
-.card-info img{
+.card-info img {
     width: 4rem;
 }
 
-.card-info h3{
+.card-info h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
 }
 
-.card-info p{
+.card-info p {
     font-size: 0.9rem;
 }
 
 /* estilos banner te ofrecemos */
-.banner-ofrecemos{
+.banner-ofrecemos {
     width: 100%;
     margin-top: 6rem;
     box-shadow: 2px 2px 10px rgb(172, 172, 172);
 }
 
-.banner-ofrecemos img{
+.banner-ofrecemos img {
     width: 100%;
     height: 100%;
 }
 
 /* estilos tarjetas */
-.seccion-tarjetas{
+.seccion-tarjetas {
     padding: 3.5rem 0rem 3.5rem 0rem;
     text-align: center;
     margin-top: 6rem;
     background-color: #f5f5f5;
 }
 
-.seccion-tarjetas h2{
+.seccion-tarjetas h2 {
     font-family: var(--tipografia-titulos);
     text-align: center;
     font-weight: 600;
     font-size: 2.4rem;
 }
 
-.seccion-tarjetas h3{
+.seccion-tarjetas h3 {
     padding: 0.4rem 0rem 1rem;
     font-size: 1.5rem;
 }
 
-.contenedor-tarjetas-pago{
+.contenedor-tarjetas-pago {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
 }
 
-.contenedor-tarjetas-pago img{
+.contenedor-tarjetas-pago img {
     width: 10rem;
 }
 
-.contenedor-link-wsp{
+.contenedor-link-wsp {
     margin-top: 2rem;
 }
 
-.contenedor-link-wsp a{
+.contenedor-link-wsp a {
     text-decoration: none;
     color: #000;
     border: 2px solid #3a3a3a;
@@ -181,12 +181,12 @@ h1{
     font-size: 0.8rem;
 }
 
-.contenedor-link-wsp a:hover{
+.contenedor-link-wsp a:hover {
     background-color: #ebebeb;
 }
 
 /* estilos chatita */
-.contenedor-chatita{
+.contenedor-chatita {
     margin-top: 6rem;
     display: flex;
     justify-content: center;
@@ -198,7 +198,7 @@ h1{
     font-size: 2.4rem;
 }
 
-.subcont-chatita-img{
+.subcont-chatita-img {
     display: flex;
     justify-content: center;
 }
@@ -210,45 +210,45 @@ h1{
     transition: transform 1.5s ease, opacity 1.7s ease;
 }
 
-.subcontenedor-chatita .contenedor-link-wsp{
+.subcontenedor-chatita .contenedor-link-wsp {
     margin-top: 0.3rem;
 }
 
-.contenedor-link-wsp{
+.contenedor-link-wsp {
     text-align: center;
 }
 
 /* estilos marcas */
-.seccion-marcas{
+.seccion-marcas {
     margin-top: 6rem;
     text-align: center;
     margin-bottom: 6rem;
 }
 
-.seccion-marcas h2{
+.seccion-marcas h2 {
     font-family: var(--tipografia-titulos);
     text-align: center;
     font-weight: 600;
     font-size: 2.4rem;
 }
 
-.seccion-marcas h3{
+.seccion-marcas h3 {
     padding: 0.4rem 0rem 1rem;
     font-size: 1.5rem;
 }
 
-.seccion-marcas .contenedor-img-marcas{
+.seccion-marcas .contenedor-img-marcas {
     display: flex;
     gap: 2rem;
     padding: 1rem;
 }
 
-.seccion-marcas .contenedor-img-marcas img{
+.seccion-marcas .contenedor-img-marcas img {
     width: 11rem;
     padding-top: 0.4rem;
 }
 
-.contenedor-marcas-slider{
+.contenedor-marcas-slider {
     width: 70rem;
     overflow: hidden;
     margin: 0 auto;
@@ -273,7 +273,7 @@ h1{
     background: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     width: 320px;
     height: auto;
 }
@@ -304,48 +304,48 @@ h1{
 }
 
 /* estilos footer */
-footer{
+footer {
     background-color: var(--color-header-footer);
     color: #e3e3e3;
 }
 
-.contenedor-footer{
+.contenedor-footer {
     display: flex;
     justify-content: space-around;
     padding: 3.5rem 0rem 2rem 0rem;
 }
 
-.contenedor-footer .sub-detalle-izquierda{
+.contenedor-footer .sub-detalle-izquierda {
     margin-right: 37rem;
 }
 
-.contenedor-footer .sub-detalle-izquierda img{
+.contenedor-footer .sub-detalle-izquierda img {
     width: 12rem;
 }
 
-.contenedor-footer .sub-detalle-izquierda p{
+.contenedor-footer .sub-detalle-izquierda p {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
-.contenedor-footer .sub-detalle-izquierda .primer-parrafo{
+.contenedor-footer .sub-detalle-izquierda .primer-parrafo {
     margin-top: 1rem;
 }
 
-.contenedor-footer .sub-detalle-izquierda .ultimo-parrafo{
+.contenedor-footer .sub-detalle-izquierda .ultimo-parrafo {
     margin-bottom: 0;
 }
 
-.contenedor-footer .sub-detalle-derecha{
+.contenedor-footer .sub-detalle-derecha {
     display: flex;
     align-items: flex-end;
 }
 
-.p-contenedor-redes{
+.p-contenedor-redes {
     margin-bottom: 0;
 }
 
-.contenedor-footer .sub-detalle-derecha a{
+.contenedor-footer .sub-detalle-derecha a {
     color: #161616;
     font-size: 1.2rem;
     border-radius: 4px;
@@ -362,36 +362,35 @@ footer{
     padding-bottom: 2rem;
 }
 
-.disenio-desarrollo span{
+.disenio-desarrollo span {
     font-weight: 600;
 }
 
-.disenio-desarrollo a{
+.disenio-desarrollo a {
     color: #a2a2a2;
     text-decoration: none;
 }
 
-.disenio-desarrollo a:hover{
+.disenio-desarrollo a:hover {
     text-decoration: underline;
 }
 
-/* VISTA CELULAR */
-
+/* VISTA CELULAR (450px) */
 @media (max-width: 450px) {
-    .logo{
+    /* barra de navegacion */
+    .logo {
         margin: 0;
         width: 8rem;
     }
 
-    .container-fluid{
+    .container-fluid {
         padding: 0;
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         padding: 1px 8px;
         box-shadow: none !important;
     }
-
 
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -402,11 +401,204 @@ footer{
         margin-top: 0.7rem;
     }
 
-
-    .nav-link{
+    .nav-link {
         font-size: 13px;
         padding: 0.4rem 0.2rem;
         margin: 0;
     }
+
+    /* carrusel */
+    .carousel-inner {
+        height: auto;
+    }
+
+    .carousel-control-next-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .carousel-control-prev-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .carousel-indicators [data-bs-target][data-bs-slide-to] {
+        width: 13px;
+        height: 1px;
+    }
+
+    /* quienes somos */
+    .contenedor-quienes-somos{
+        margin-top: 3rem;
+    }
+
+    .contenedor-quienes-somos h1{
+        font-size: 1.5rem;
+    }
+
+    .contenedor-parrafo{
+        width: 18.6rem;
+    }
+
+    .contenedor-parrafo p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    /* porque elegir melano motos */
+    .contenedor-titulo-cards {
+        margin-top: 3rem;
+    }
+
+    .contenedor-titulo-cards h2 {
+        font-size: 1.4rem;
+        padding: 1.7rem 0 0 0;
+        margin: 0;
+    }
+
+    .subcontenedor-cards{
+        margin-top: 1rem;
+        padding-bottom: 1.7rem;
+    }
+
+    .subcontenedor-cards .card-info{
+        width: 18rem;
+        padding: 3rem;
+        margin: 0.7rem 0;
+    }
+
+    .subcontenedor-cards .card-info img{
+        width: 3.4rem;
+    }
+
+    .subcontenedor-cards .card-info h3{
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .subcontenedor-cards .card-info p{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    /* banner te ofrecemos */
+    .banner-ofrecemos {
+        margin-top: 3rem;
+    }
+
+    /* tarjetas */
+    .seccion-tarjetas{
+        margin-top: 3rem;
+        padding: 1.7rem 0;
+    }
+
+    .seccion-tarjetas h2{
+        font-size: 1.3rem;
+    }
+
+    .seccion-tarjetas h3{
+        font-size: 0.9rem;
+        margin: 0;
+        padding-top: 3px;
+    }
+
+    .contenedor-tarjetas-pago{
+        gap: 0rem;
+    }
+
+    .contenedor-tarjetas-pago img{
+        width: 7rem;
+        padding: 4px 10px;
+    }
+
+    /* link de consulta */
+    .contenedor-link-wsp{
+        margin-top: 20px;
+    }
+
+    .contenedor-link-wsp a{
+        font-size: 0.5rem;
+        padding: 0.4rem;
+    }
+
+    /* chatita */
+    .contenedor-chatita{
+        margin-top: 3rem;
+    }
+
+    .contenedor-titulo-domicilio h2{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .subcont-chatita-img #chatita{
+        width: 20rem;
+    }
+
+    /* marcas */
+    .seccion-marcas{
+        margin: 3rem 0;
+    }
+
+    .seccion-marcas h2{
+        font-size: 1.3rem;
+    }
+
+    .seccion-marcas h3{
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .contenedor-img-marcas{
+        padding: 0;
+    }
+
+    .seccion-marcas .contenedor-marcas-slider .contenedor-img-marcas img {
+        width: 7rem !important;
+    }
+
+    .seccion-marcas .contenedor-link-wsp{
+        margin-top: 15px;
+    }
+
+    /* ubicacion iframe mapa */
+    iframe{
+        height: 600px;
+    }
+
+    .detalle-ubicacion{
+        padding: 21px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        top: auto;
+        right: auto;
+        transform: translateX(-77%);
+        width: 90vw;
+        top: 6px;
+        bottom: auto;
+        max-width: 245px;
+    }
+
+    .detalle-ubicacion h3{
+        font-size: 1rem;
+    }
+
+    .detalle-ubicacion img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .detalle-ubicacion p{
+        font-size: 0.7rem;
+    }
+
+    .detalle-ubicacion .ultimo-ubi-detalle{
+        font-size: 0.7rem;
+        margin-bottom: 0;
+    }
+
 
 }
