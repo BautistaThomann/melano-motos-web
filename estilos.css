@@ -551,6 +551,10 @@ footer {
         padding-bottom: 0;
     }
 
+    .contenedor-marcas-slider{
+        width: 100%;
+    }
+
     .contenedor-img-marcas{
         padding: 0;
     }
@@ -600,5 +604,37 @@ footer {
         margin-bottom: 0;
     }
 
+    /* footer */
+    .contenedor-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedor-footer .sub-detalle-izquierda{
+        margin-right: 0;
+    }
+
+    .contenedor-footer .sub-detalle-izquierda img{
+        width: 8rem;
+    }
+
+    .contenedor-footer .sub-detalle-izquierda p{
+        font-size: 0.7rem;
+    }
+
+    .p-contenedor-redes{
+        margin-top: 25px;
+    }
+
+    .contenedor-footer .sub-detalle-derecha a{
+        font-size: 1rem;
+        padding: 4px;
+    }
+
+    .disenio-desarrollo{
+        margin: 3rem 0 0 0;
+        text-align: center;
+    }
 
 }

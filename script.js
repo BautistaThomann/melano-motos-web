@@ -5,21 +5,17 @@ window.addEventListener("scroll", () => {
     const rect = chatita.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
-    // Detectar dispositivo
-    const isMobile = window.innerWidth <= 768; // Celular hasta 768px
-    const isNotebook = window.innerWidth > 768; // Notebook
+    const isMobile = window.innerWidth <= 768;
+    const isNotebook = window.innerWidth > 768;
 
-    // Definir umbrales distintos según dispositivo
     let topThreshold;
     let bottomThreshold;
 
     if (isMobile) {
-        // 📱 Celular
-        topThreshold = 0.95;   // aparece antes
+        topThreshold = 0.95;
         bottomThreshold = 0.25;
     } else if (isNotebook) {
-        // 💻 Notebook
-        topThreshold = 0.85;   // un poco más tarde
+        topThreshold = 0.85;
         bottomThreshold = 0.45;
     }
 
@@ -34,8 +30,6 @@ window.addEventListener("scroll", () => {
         chatita.style.opacity = "0";
     }
 });
-
-
 
 // animacion marcas
 const contenedor = document.querySelector('.contenedor-img-marcas');
